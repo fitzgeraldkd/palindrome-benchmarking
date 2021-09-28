@@ -39,6 +39,7 @@ function testGenerator(quantity, minLength, maxLength) {
         if (Math.random() < 0.5) {
             let thisStr = testGenerateRandom(length);
             // ensure it is not a palindrome
+            // change the middle of the string since options 1 and 3 check starting at the outside
             if (length > 1) {
                 let middle;
                 if (length % 2 === 0) {
